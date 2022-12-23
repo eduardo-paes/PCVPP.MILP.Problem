@@ -6,10 +6,6 @@
 - linhas = g (G)
 
 ## Observações
-- 't' é um subconjunto de 'j'
-- T pode ser subdividido em:
-    - Trem de chegada T[a]
-    - Trem de saída T[b]
 - O[i,j] = i-ésima circulação do vagão j
 - H = tempo de horizonte definido pelo analista
 
