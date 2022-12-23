@@ -1,9 +1,9 @@
 ## Conjuntos
-- vagões/jobs = j ∈ J
-- trechos/máquinas = q ∈ Q
-- operacoes = i ∈ I
-- trens = t ∈ T
-- linhas = g ∈ G
+- vagões/jobs = j pertence (J)
+- trechos/máquinas = q pertence (Q)
+- operacoes = i pertence (I)
+- trens = t pertence (T)
+- linhas = g pertence (G)
 
 ## Observações
 - O[i,j] = i-ésima circulação do vagão j
