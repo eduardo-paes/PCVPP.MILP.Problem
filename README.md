@@ -1,5 +1,4 @@
 # Implementação de Solução para PCVPP
----
 
 Implementação baseada no trabalho **AVALIAÇÃO DE CAPACIDADE EM PÁTIOS FERROVIÁRIOS PLANOS DE CLASSIFICACÃO ATRAVÉS DE MODELO DE OTIMIZACÃO**.
 
