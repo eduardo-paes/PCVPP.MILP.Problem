@@ -1,26 +1,11 @@
-## Conjuntos
-- vagões/jobs = j ∈ J
-- trechos/máquinas = q ∈ Q
-- operacoes = i ∈ I
-- trens = t ∈ T
-- linhas = g ∈ G
+# Implementação de Solução para PCVPP
+---
 
-## Observações
-- O[i,j] = i-ésima circulação do vagão j
-- H = tempo de horizonte definido pelo analista
+Implementação baseada no trabalho **AVALIAÇÃO DE CAPACIDADE EM PÁTIOS FERROVIÁRIOS PLANOS DE CLASSIFICACÃO ATRAVÉS DE MODELO DE OTIMIZACÃO**.
 
-## Parâmetros
-- P = tempo de circulação (i) de um vagão j em um trecho q
-- r[j] = instante de chegada do vagão j, ou seja, horário de chegada do trem t (em que j pertence à t)
-- AMV[q,s] = será igual a 1 se q estiver ligado em s; 0 caso contrário
-- PCH[j] = trecho do pátio em que o vagão j está posicionado ao receber o trem de chegada t
-- PSA[j] = trecho do pátio em que o vagão j deverá estar posicionado para que o trem de saída t possa sair
+Descrição e objetivos da solução podem ser encontrados nas fontes abaixo:
+- [Artigo](./sources/Artigo%20-%20AVALIA%C3%87%C3%83O%20DE%20CAPACIDADE%20EM%20P%C3%81TIOS%20FERROVI%C3%81RIOS%20PLANOS%20DE%20CLASSIFICAC%C3%83O%20ATRAV%C3%89S%20DE%20MODELO%20DE%20OTIMIZAC%C3%83O.pdf)
+- [Tese](./sources/Tese%20-%20AVALIA%C3%87%C3%83O%20DE%20CAPACIDADE%20EM%20P%C3%81TIOS%20FERROVI%C3%81RIOS%20PLANOS%20DE%20CLASSIFICAC%C3%83O%20ATRAV%C3%89S%20DE%20MODELO%20DE%20OTIMIZAC%C3%83O.PDF)
 
-## Variáveis
-- y[i,j] = instante de início da i-ésima operação do vagão j. (real)
-- z[i,q,j] = será 1 se a i-ésima operação do vagão j acontecer no trecho q; 0 caso contrário. (binário)
-- x[q,i,j,k,l] = será 1 se a i-ésima operação do vagão j precede a k-ésima operação do vagão l no trecho q; 0 caso contrário. (binário)
-- f[i,j] = será se a i-ésima operação do vagão j é a última, antes da partida do seu trem t; 0 caso contrário. (binário)
-- C[j] = instante de conclusão do vagão j / horário de partida do trem t. (real)
-- C[max] = horário da partida do último vagão j do trem t [makespan]. (real)
-
+Código principal implementado utilizando o solver Gurobi:
+- [Implementação](./milp-problem.ipynb)
