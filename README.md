@@ -8,3 +8,7 @@ Descrição e objetivos da solução podem ser encontrados nas fontes abaixo:
 
 Código principal implementado utilizando o solver Gurobi:
 - [Implementação](./milp-problem.ipynb)
+
+Especificações:
+- Python versão 3.9.6
+- Gurobi versão 9.5.2
